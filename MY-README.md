@@ -1,13 +1,18 @@
 **WHAT I DID**
 
 1. install react new app:
+
     $ create-react-app react-redux-jsonplaceholder
+
 2. install extra packages:
+    
     $ npm i axios react-dom react-redux redux redux-thunk react-router-dom node-sass
+
 3. create actions:
     create actions folder under src
     inside actions folder create types.js
     inside actions folder create jphActions.js
+
 4. create reducers:
    create reducers folder inside src folder, 
    inside create index.js, jphReducer, errorReducer
@@ -27,6 +32,7 @@ ReactDOM.render(
     
     
 7. install lazy loading package:
+
     $ npm i --save react-lazy-load-image-component
-   use ref: [ https://www.npmjs.com/package/react-lazy-load-image-component ]
-   for image lazy loading 
+    
+   ref: [ https://www.npmjs.com/package/react-lazy-load-image-component ] 
