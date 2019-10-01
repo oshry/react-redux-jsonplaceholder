@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 class PhotoItem extends Component {
 
@@ -10,7 +10,7 @@ class PhotoItem extends Component {
 
         return (
             <div className="card">
-                <img className="card-img-top"
+                <LazyLoadImage className="card-img-top"
                      src={photo.thumbnailUrl}
                      alt={photo.title}
                 />

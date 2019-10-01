@@ -26,3 +26,6 @@ ReactDOM.render(
     , document.querySelector('.container'));
     
     
+7. $ npm i --save react-lazy-load-image-component
+   use ref: [ https://www.npmjs.com/package/react-lazy-load-image-component ]
+   for image lazy loading 
