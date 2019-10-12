@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import { Route } from "react-router-dom";
-import { connect } from 'react-redux';
 
 import Landing from '../layout/Landing'
 import Photos from "../jph/Photos";
