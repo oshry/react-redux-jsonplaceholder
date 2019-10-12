@@ -1,13 +1,5 @@
 
-.loader{
-  background: url('./img/spinner.gif') no-repeat;
-  border-radius: 1.25rem!important;
-  background-size: cover;
-  background-position: center;
-  width: 200px;
-  height: 200px;
 
-}
 a,
 a:hover,
 a:focus {
@@ -130,6 +122,101 @@ a[data-toggle="collapse"] {
     height: 40px;
     width: 40px;
   }
+}
+
+/* ---------------------------------------------------
+    LAYOUT STYLE
+----------------------------------------------------- */
+.my-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.my-col {
+  flex: 1 0 18%; /* The important bit. This percentage decides your columns.
+ The percent can be px. It just represents your minimum starting width.
+  */
+  margin: 5px;
+  height: 400px;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ---------------------------------------------------
+    ANIMATION PAGE
+----------------------------------------------------- */
+
+.animation{
+  .grow{
+    background-color: #ff0000;
+  }
+  .grow:hover {
+      box-shadow: 0px 0px 150px #000000;
+      z-index: 2;
+      -webkit-transition: all 200ms ease-in;
+      -webkit-transform: scale(1.5);
+      -ms-transition: all 200ms ease-in;
+      -ms-transform: scale(1.5);
+      -moz-transition: all 200ms ease-in;
+      -moz-transform: scale(1.5);
+      transition: all 200ms ease-in;
+      transform: scale(1.5) !important;
+  }
+  button.shrink {
+    background-color: #ff0000;
+    &:hover {
+      box-shadow: 0px 0px 150px #000000;
+      z-index: 2;
+      -webkit-transition: all 200ms ease-in;
+      -webkit-transform: scale(1.5);
+      -ms-transition: all 200ms ease-in;
+      -ms-transform: scale(1.5);
+      -moz-transition: all 200ms ease-in;
+      -moz-transform: scale(1.5);
+      transition: all 200ms ease-in;
+      transform: scale(0.5);
+    }
+  }
+  button.color-change {
+    background: #2db34a;
+    border-radius: 6px;
+    transition-property: background, border-radius;
+    transition-duration: 6s, 2s;
+    transition-timing-function: ease-in-out;
+    height:95px;
+    width: 95px;
+    line-height: 95px;
+    text-align: center;
+    cursor: pointer;
+    &:hover {
+      background: #ff0000;
+      border-radius: 50%;
+    }
+  }
+}
+
+@keyframes rot {
+  from {
+    transform: rotate(0deg)
+    translate(-50px)
+    rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg)
+    translate(-50px)
+    rotate(-360deg);
+  }
+}
+
+.smile {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 200px;
+  left: 50%;
+  margin: -20px;
+  font-size: 100px;
+  animation: rot 3s infinite linear;
 }
 
 /* ---------------------------------------------------

@@ -6,7 +6,12 @@ class PhotoFeed extends Component {
     render() {
         const { photos } = this.props;
 
-        return photos.map(photo => <PhotoItem key={photo._id} photo={photo} />)
+        const Grid = (
+            <div className="my-row">
+                {photos.map(photo => <div className="my-col"><PhotoItem key={photo._id} photo={photo} /></div>)}
+            </div> );
+
+        return Grid
     }
 }
 

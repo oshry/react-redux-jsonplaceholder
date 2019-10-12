@@ -14,6 +14,7 @@ module.exports = ({ mode } = { mode: "production" }) => {
         },
         devServer: {
             hot: true,
+            historyApiFallback: true,
             open: true
         },
         module: {

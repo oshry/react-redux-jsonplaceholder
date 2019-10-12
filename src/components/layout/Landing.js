@@ -20,4 +20,4 @@ class Landing extends Component {
     }
 }
 
-export default connect(null)(Landing);
+export default Landing;

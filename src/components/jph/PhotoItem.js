@@ -6,17 +6,17 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 class PhotoItem extends Component {
 
     render() {
-        const { photo } = this.props;
+        const {photo } = this.props;
 
         return (
-            <div className="card">
-                <LazyLoadImage className="card-img-top"
+            <div className="">
+                <LazyLoadImage className=""
                      src={photo.thumbnailUrl}
                      alt={photo.title}
                 />
-                <div className="card-body">
-                    <h5 className="card-title">{photo.title}</h5>
-                    <p className="card-text"></p>
+                <div className="">
+                    <h5 className="">{photo.title}</h5>
+                    <p className=""></p>
                 </div>
             </div>
         );
